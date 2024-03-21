@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.container{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #37af65;
+  color: #fff;
+  padding: 1rem;
+}
+
+.title, .description{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.description{
+  margin-bottom: 2rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+input{
+  padding: 0.3rem;
+}
+
+input[type="radio"], input[type="checkbox"]:hover{
+  cursor: pointer;
+}
+
+label{
+  display: inline;
+}
+
+
+select, textarea{
+  padding: 0.4rem;
+}
+
+#option4, #option5{
+  display: none;
+}
+
+.radio-option, .form-option{
+  display: flex;
+  gap: 0.4rem;
+}
+
+button{
+  outline: none;
+  border: none;
+  background-color: green;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 600px) {
+  body{
+    padding-block: 3rem;
+  }
+}

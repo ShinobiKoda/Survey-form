@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title" class="title">shinobiKoda Survery Form</h1>
+      <p id="description" class="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form action="" id="survey-form" class="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="name"
+          required
+          placeholder="Enter your name here..."
+        />
+
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="sirp2804@gmail.com..."
+          required
+        />
+
+        <label for="number" id="number-label">Age(Optional)</label>
+        <input type="number" name="" id="number" min="5" max="45" />
+
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select name="dropdown" id="dropdown" class="dropdown">
+          <option value="" disabled selected>Select your Role</option>
+          <option value="Hero">Main Character</option>
+          <option value="Villian">Cool Character</option>
+        </select>
+
+        <p>Would you recommend shinobiKoda to a friend</p>
+
+        <div class="radio-option">
+          <input type="radio" name="options" id="option1" value="Definitely" />
+          <label for="option1">Definitely</label>
+        </div>
+
+        <div class="radio-option">
+          <input type="radio" name="options" id="option2" value="Maybe" />
+          <label for="option2">Maybe</label>
+        </div>
+
+        <div class="radio-option">
+          <input type="radio" name="options" id="option3" value="Not sure" />
+          <label for="option3">Not sure</label>
+        </div>
+
+        <input type="radio" name="options" id="option4" value="Not sure" />
+        <input type="radio" name="options" id="option5" value="Not sure" />
+
+        <p>What is your favorite feacture of shinobiKoda?</p>
+        <select name="features" id="features" class="dropdown">
+          <option value="" disabled selected>Select an option</option>
+          <option value="Glorious">Cool</option>
+          <option value="Immmortal">Temporarily Immmortal</option>
+          <option value="Interesting">Omoshiroi</option>
+        </select>
+
+        <p>What would you like to see improved?(Check all that apply)</p>
+
+        <div class="form-option">
+          <input
+            type="checkbox"
+            name="Front-end"
+            value="Front-end Projects"
+            id="Front-end"
+          />
+          <label for="Front-end">Front-end Projects</label>
+        </div>
+
+        <div class="form-option">
+          <input
+            type="checkbox"
+            name="Back-end"
+            value="Back-end Projects"
+            id="Back-end"
+          />
+          <label for="Back-end">Back-end Projects</label>
+        </div>
+
+        <div class="form-option">
+          <input
+            type="checkbox"
+            name="Data"
+            value="Data Visualization"
+            id="Data"
+          />
+          <label for="Data">Data Visualization</label>
+        </div>
+
+        <div class="form-option">
+          <input type="checkbox" name="Challenges" value="Challenges" />
+          <label for="Challenges">Challenges</label>
+        </div>
+
+        <div class="form-option">
+          <input
+            type="checkbox"
+            name="Community"
+            value="Open Source Community"
+          />
+          <label for="Community">Open Source Community</label>
+        </div>
+
+        <div class="form-option">
+          <input type="checkbox" id="Gitter" value="Gitter help rooms" />
+          <label for="Gitter">Gitter help rooms</label>
+        </div>
+
+        <div class="form-option">
+          <input type="checkbox" id="videos" value="Videos" />
+          <label for="videos">Videos</label>
+        </div>
+
+        <div class="form-option">
+          <input type="checkbox" id="meetups" value="City Meetups" />
+          <label for="meetups">City Meetups</label>
+        </div>
+
+        <div class="form-option">
+          <input type="checkbox" id="wiki" value="Wiki" />
+          <label for="wiki">Wiki</label>
+        </div>
+
+        <div class="form-option">
+          <input type="checkbox" id="forum" value="Forum" />
+          <label for="forum">Forum</label>
+        </div>
+
+        <div class="form-option">
+          <input type="checkbox" id="courses" value="Additional Courses" />
+          <label for="courses">Additional Courses</label>
+        </div>
+
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea
+          name="comments"
+          id=""
+          cols="30"
+          rows="7"
+          required
+          placeholder="Enter your comment here..."
+        ></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
